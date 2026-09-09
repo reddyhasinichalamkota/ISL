@@ -1,0 +1,55 @@
+# Python & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+tensorflow-env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Data & Datasets
+Dataset/
+Dataset.zip
+Sample Videos/
+Sample Videos.zip
+Video_Dataset/
+*.csv
+!dynamic_video_splits.csv
+
+# Model Weights & Artifacts
+*.h5
+*.hdf5
+*.keras
+*.pth
+*.pt
+*.onnx
+*.pb
+
+# IDEs & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Output & Logs
+analysis_output/
+*.log

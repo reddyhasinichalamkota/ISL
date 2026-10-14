@@ -58,7 +58,7 @@ class TestReview1Integration(unittest.TestCase):
 
     def test_actual_video_pipeline(self):
         """Test dynamic pipeline with an actual video file if available."""
-        sample_video_path = r"d:\ISL\Sample Videos\Hello.mp4"
+        sample_video_path = os.path.join(os.path.dirname(__file__), "Sample Videos", "Hello.mp4")
         if os.path.exists(sample_video_path):
             label, conf = run_dynamic(sample_video_path)
             self.assertIsInstance(label, str)

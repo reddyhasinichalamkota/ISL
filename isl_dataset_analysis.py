@@ -28,7 +28,7 @@ from PIL import Image, UnidentifiedImageError
 # ------------------------------------------------------------------
 # 1. CONFIG - EDIT THIS PATH
 # ------------------------------------------------------------------
-BASE_DIR = r"C:\Users\reddy\OneDrive\Desktop\ISL_Translator\Dataset"   # e.g. r"C:\Users\Hasi\Datasets\RealSign"
+BASE_DIR = os.environ.get("ISL_DATASET_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "Dataset"))
 SPLITS = ["Training", "Testing", "Validation"]  # "Letters" is likely the master/reference folder, checked separately
 IMG_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp"}
 TARGET_SIZE = (224, 224)  # MobileNetV2 default input size

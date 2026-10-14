@@ -7,6 +7,7 @@ __pycache__/
 env/
 venv/
 tensorflow-env/
+mediapipe-env/
 ENV/
 build/
 develop-eggs/
@@ -26,6 +27,7 @@ wheels/
 
 # Data & Datasets
 Dataset/
+Dataset_cropped/
 Dataset.zip
 Sample Videos/
 Sample Videos.zip

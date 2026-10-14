@@ -1,3 +1,4 @@
+
 # Real-Time Indian Sign Language Recognition System
 
 A deep learning platform for **real-time Indian Sign Language (ISL) recognition** supporting both **static sign language (A–Z alphabets)** and **dynamic sign language (words and phrases)** with spatial-temporal deep learning and LLM/RAG natural language post-processing.

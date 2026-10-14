@@ -13,7 +13,7 @@ VAL_RATIO   = 0.15
 TEST_RATIO  = 0.15
 
 EXCLUDED_FOLDERS = {"Still"}  # still-sign videos, not part of dynamic pipeline
-dataset_path="Video_Dataset"
+dataset_path=os.path.join("Video_Dataset", "Video_Dataset")
 
 def collect_videos(dataset_path):
     records = []

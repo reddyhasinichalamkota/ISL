@@ -16,7 +16,8 @@ import hashlib
 from pathlib import Path
 from collections import defaultdict
 
-BASE_DIR = r"C:\Users\reddy\OneDrive\Desktop\ISL_Translator\Dataset"
+import os
+BASE_DIR = os.environ.get("ISL_DATASET_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "Dataset"))
 SPLITS = ["Training", "Testing", "Validation"]
 IMG_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp"}
 

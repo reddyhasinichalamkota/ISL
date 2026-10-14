@@ -10,9 +10,10 @@ import pandas as pd
 import numpy as np
 from data_pipeline.dynamic_preprocessing import extract_frames_from_video, prepare_sequence
 
-VIDEO_DIR = r"d:\ISL\Sample Videos"
-OUTPUT_DIR = r"d:\ISL\analysis_output"
-REPORT_PATH = r"d:\ISL\dynamic_dataset_report.md"
+BASE_PATH = os.path.dirname(os.path.abspath(__file__))
+VIDEO_DIR = os.path.join(BASE_PATH, "Sample Videos")
+OUTPUT_DIR = os.path.join(BASE_PATH, "analysis_output")
+REPORT_PATH = os.path.join(BASE_PATH, "dynamic_dataset_report.md")
 
 def analyze_video_dataset(video_dir: str):
     print(f"=== Member 2: Dynamic ISL Dataset Analysis ===")

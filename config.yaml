@@ -1,0 +1,32 @@
+# ISL Recognition System Central Configuration
+
+camera:
+  index: 0
+  width: 640
+  height: 480
+  fps: 30
+
+preprocessing:
+  image_width: 224
+  image_height: 224
+  channels: 3
+  normalization: true
+
+dynamic:
+  sequence_length: 30
+  inference_interval: 3
+
+model:
+  backbone: CustomCNN
+  temporal_model: GRU  # Switchable: GRU or LSTM
+
+inference:
+  confidence_threshold: 0.40
+  smoothing: true
+  smoothing_window_size: 5
+
+training:
+  batch_size: 32
+  epochs: 30
+  learning_rate: 0.001
+  seed: 42
